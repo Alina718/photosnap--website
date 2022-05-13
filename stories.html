@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts/script.js"></script>
+  <script defer src="scripts/blog-page.js" type="module"></script>
+  <title>Frontend Mentor | Photosnap Website Challenge</title>
+</head>
+<body>
+  <header>
+    <div class="header container flex-ai-center">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/shared/desktop/logo.svg" alt="logo">
+        </a>
+      </div>
+      <nav>
+        <ul class="desktop-menu__nav flex-ai-center">
+          <li><a class="nav-link uppercase" href="stories.html">Stories</a></li>
+          <li><a class="nav-link uppercase" href="features.html">Features</a></li>
+          <li><a class="nav-link uppercase" href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+      <a href="pricing.html" class="button button__bg-black header-button fs-link uppercase">Get an invite</a>
+      <button id="mobile-button" class="mobile-menu__button"></button>
+    </div>
+    <div class="overlay"></div>
+    <div id="mobile-menu" class="mobile-menu">
+      <nav>
+        <ul class="mobile-menu__nav">
+          <li><a class="uppercase color-black" href="stories.html">Stories</a></li>
+          <li><a class="uppercase color-black" href="features.html">Features</a></li>
+          <li><a class="uppercase color-black" href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+      <a href="pricing.html" class="button__mobile color-white uppercase">Get an invite</a>
+    </div>
+  </header>
+  <section class="hero-stories--page">
+    <div class="hero-stories--image bg-image-settings"></div>
+    <div class="hero-stories--intro">
+      <p class="featured-story uppercase">Last month's featured story</p>
+      <h1 class="hero-stories--title max-title uppercase">Hazy full <br> moon of <br> Appalachia</h1>
+      <p class="date">March 2nd 2020 <span class="color-white">by John Appleseed</span></p>
+      <p class="text-flow"> The dissected plateau area, while not actually made up of geological mountains, 
+        is popularly called "mountains," especially in eastern Kentucky and West Virginia, 
+        and while the ridges are not high, the terrain is extremely rugged.</p>
+      <a class="uppercase color-white flex-ai-center" href="stories.html">
+        Read Story
+        <img class="arrow" src="assets/shared/desktop/arrow.svg" alt="arrow">
+      </a>
+    </div>
+  </section>
+  <section id="blog" class="blog"></section>
+  <footer>
+    <div class="footer-container container">
+      <img class="footer__logo" src="assets/shared/desktop/logo-footer.svg" alt="logo">
+      
+        <ul class="socials">
+          <li>
+            <a href="">
+              <img class="social__link--icon" src="assets/shared/desktop/facebook.svg" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="social__link--icon" src="assets/shared/desktop/youtube.svg" alt="YouTube">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="social__link--icon" src="assets/shared/desktop/twitter.svg" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a href=""><img class="social__link--icon" src="assets/shared/desktop/pinterest.svg" alt="Pinterest">
+            </a>
+          </li>
+          <li>
+            <a href=""><img class="social__link--icon" src="assets/shared/desktop/instagram.svg" alt="Instagram">
+            </a>
+          </li>
+        </ul>
+      
+        <ul class="footer-menu__nav">
+          <li><a class="footer-menu__nav--link uppercase color-white" href="index.html">Home</a></li>
+          <li><a class="footer-menu__nav--link uppercase color-white" href="stories.html">Stories</a></li>
+          <li><a class="footer-menu__nav--link uppercase color-white" href="features.html">Features</a></li>
+          <li><a class="footer-menu__nav--link uppercase color-white" href="pricing.html">Pricing</a></li>
+        </ul>
+    
+      <a class="invite-link footer__link uppercase color-white flex-ai-center" href="pricing.html">
+        Get an invite
+        <img class="arrow" src="assets/shared/desktop/arrow.svg" alt="arrow">
+      </a>
+      <p class="copyright">Copyright 2022. All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>

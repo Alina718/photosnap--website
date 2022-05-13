@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts/script.js"></script>
+  <title>Frontend Mentor | Photosnap Website Challenge</title>
+</head>
+<body>
+  <header>
+    <div class="header container flex-ai-center">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/shared/desktop/logo.svg" alt="logo">
+        </a>
+      </div>
+      <nav>
+        <ul class="desktop-menu__nav flex-ai-center">
+          <li><a class="nav-link uppercase" href="stories.html">Stories</a></li>
+          <li><a class="nav-link uppercase" href="features.html">Features</a></li>
+          <li><a class="nav-link uppercase" href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+      <a href="#pricing" class="button button__bg-black header-button fs-link uppercase">Get an invite</a>
+      <button id="mobile-button" class="mobile-menu__button"></button>
+    </div>
+    <div class="overlay"></div>
+    <div id="mobile-menu" class="mobile-menu">
+      <nav>
+        <ul class="mobile-menu__nav">
+          <li><a class="uppercase color-black" href="stories.html">Stories</a></li>
+          <li><a class="uppercase color-black" href="features.html">Features</a></li>
+          <li><a class="uppercase color-black" href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+      <a href="#pricing" class="button__mobile color-white uppercase">Get an invite</a>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="wrapper">
+      <div class="hero__intro">
+        <h1 class="max-title uppercase">Pricing</h1>
+        <p class="text-flow">Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
+          It’s the simple way to create and share your photos.</p>
+        <a class="invite-link uppercase color-white flex-ai-center" href="#pricing">
+          Get an invite
+          <img class="arrow" src="assets/shared/desktop/arrow.svg" alt="arrow">
+        </a>
+      </div>
+    </div>
+    <div class="hero__image hero__image--pricing bg-image-settings"></div>
+  </section>
+  <section id="pricing" class="pricing">
+    <div class="pricing-container container">
+      <div class="subscrption-toggle flex-ai-center">
+        <input type="checkbox" name="switch" id="toggle">
+        <label class="toggle" for="toggle"></label>
+        <span class="monthly min-title">Monthly</span>
+        <span class="yearly min-title">Yearly</span>
+      </div>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h2 class="pricing-card__title mid-title color-black">Basic</h2>
+          <p class="pricing-card__text">Includes basic usage of our platform. <br> Recommended for new and aspiring <br> photographers.</p>
+          <p class="per-month max-title price color-black">$19.00 <span>per month</span></p>
+          <p class="per-year max-title price color-black">$190.00 <span>per year</span></p>
+          <button class="pricing-card__button button__bg-black color-black uppercase">Pick Plan</button>
+        </div>
+        <div class="pricing-card pricing-card__pro">
+          <h2 class="pricing-card__title mid-title color-white">Pro</h2>
+          <p class="pricing-card__text">More advanced features available. <br> Recommended for photography <br> veterans and professionals.</p>
+          <p class="per-month max-title price price--pro color-white">$39.00 <span>per month</span></p>
+          <p class="per-year max-title price price--pro color-white">$390.00 <span>per year</span></p>
+          <button class="pricing-card__button button__bg-white color-white uppercase">Pick Plan</button>
+        </div>
+        <div class="pricing-card">
+          <h2 class="pricing-card__title mid-title color-black">Business</h2>
+          <p class="pricing-card__text">Additional features available such as <br> more detailed metrics. Recommended <br> for business owners.</p>
+          <p class="per-month max-title price color-black">$99.00 <span>per month</span></p>
+          <p class="per-year max-title price color-black">$990.00 <span>per year</span></p>
+          <button class="pricing-card__button button__bg-black color-black uppercase">Pick Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="pricing-features container">
+      <h3 class="max-title uppercase">Compare</h3>
+      <div class="pricing-features__content--mobile">
+        <h4 class="pricing-features__title--main uppercase">The Features</h4>
+      <div class="pricing-features__item">
+        <h4 class="pricing-features__title uppercase">Unlimited Story Posting</h4>
+        <p class="pricing-features__option basic-option uppercase">Basic</p>
+        <p class="pricing-features__option pro-option uppercase">Pro</p>
+        <p class="pricing-features__option business-option uppercase">Business</p>
+        <img class="basic-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+        <img class="pro-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+        <img class="business-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+      </div>
+      <div class="pricing-features__item">
+        <h4 class="pricing-features__title uppercase">Unlimited Photo Upload</h4>
+        <p class="pricing-features__option basic-option uppercase">Basic</p>
+        <p class="pricing-features__option pro-option uppercase">Pro</p>
+        <p class="pricing-features__option business-option uppercase">Business</p>
+        <img class="basic-option--check"src="assets/pricing/desktop/check.svg" alt="check">
+        <img class="pro-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+        <img class="business-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+      </div>
+      <div class="pricing-features__item">
+        <h4 class="pricing-features__title uppercase">Embedding Custom Content</h4>
+        <p class="pricing-features__option basic-option uppercase">Basic</p>
+        <p class="pricing-features__option pro-option uppercase">Pro</p>
+        <p class="pricing-features__option business-option uppercase">Business</p>
+        <img class="pro-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+        <img class="business-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+      </div>
+      <div class="pricing-features__item">
+        <h4 class="pricing-features__title uppercase">Customize Metadata</h4>
+        <p class="pricing-features__option basic-option uppercase">Basic</p>
+        <p class="pricing-features__option pro-option uppercase">Pro</p>
+        <p class="pricing-features__option business-option uppercase">Business</p>
+        <img class="pro-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+        <img class="business-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+      </div>
+      <div class="pricing-features__item">
+        <h4 class="pricing-features__title uppercase">Advanced Metrics</h4>
+        <p class="pricing-features__option basic-option uppercase">Basic</p>
+        <p class="pricing-features__option pro-option uppercase">Pro</p>
+        <p class="pricing-features__option business-option uppercase">Business</p>
+        <img class="business-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+      </div>
+      <div class="pricing-features__item">
+        <h4 class="pricing-features__title uppercase">Photo Downloads</h4>
+        <p class="pricing-features__option basic-option uppercase">Basic</p>
+        <p class="pricing-features__option pro-option uppercase">Pro</p>
+        <p class="pricing-features__option business-option uppercase">Business</p>
+        <img class="business-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+      </div>
+      <div class="pricing-features__item">
+        <h4 class="pricing-features__title uppercase">Search Engine Indexing</h4>
+        <p class="pricing-features__option basic-option uppercase">Basic</p>
+        <p class="pricing-features__option pro-option uppercase">Pro</p>
+        <p class="pricing-features__option business-option uppercase">Business</p>
+        <img class="business-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+      </div>
+      <div class="pricing-features__item">
+        <h4 class="pricing-features__title uppercase">Custom Analytics</h4>
+        <p class="pricing-features__option basic-option uppercase">Basic</p>
+        <p class="pricing-features__option pro-option uppercase">Pro</p>
+        <p class="pricing-features__option business-option uppercase">Business</p>
+        <img class="business-option--check" src="assets/pricing/desktop/check.svg" alt="check">
+      </div>
+      </div>
+      <div class="pricing-features__content">
+        <table>
+          <tr>
+            <td class="pricing-features__title uppercase features">The Features</td>
+            <td class="pricing-features__title uppercase features">Basic</td>
+            <td class="pricing-features__title uppercase features">Pro</td>
+            <td class="pricing-features__title uppercase features">Business</td>
+          </tr>
+          <tr>
+            <td class="options pricing-features__title uppercase">Unlimited Story Posting</td>
+            <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+            <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+            <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+          </tr>
+          <tr>
+            <td class="options pricing-features__title uppercase">Unlimited Photo Upload</td>
+            <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+            <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+            <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+        </tr>
+        <tr>
+          <td class="options pricing-features__title uppercase">Embedding Custom Content</td>
+          <td class="options"></td>
+          <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+          <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+        </tr>
+        <tr>
+          <td class="options pricing-features__title uppercase">Customize Metadata</td>
+          <td class="options"></td>
+          <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+          <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+        </tr>
+        <tr>
+          <td class="options pricing-features__title uppercase">Advanced Metrics</td>
+          <td class="options"></td>
+          <td class="options"></td>
+          <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+        </tr>
+        <tr>
+          <td class="options pricing-features__title uppercase">Photo Downloads</td>
+          <td class="options"></td>
+          <td class="options"></td>
+          <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+        </tr>
+        <tr>
+          <td class="options pricing-features__title uppercase">Search Engine Indexing</td>
+          <td class="options"></td>
+          <td class="options"></td>
+          <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+        </tr>
+        <tr>
+          <td class="options pricing-features__title uppercase">Custom Analytics</td>
+          <td class="options"></td>
+          <td class="options"></td>
+          <td class="options"><img src="assets/pricing/desktop/check.svg" alt="check"></td>
+        </tr>
+      </table>
+      </div>
+    </div>
+  </section>
+  <section class="beta bg-image-settings">
+    <div class="beta__container container">
+      <h3 class="max-title uppercase color-white">We're in Beta. <br> Get your invite <br> today!</h3>
+      <a data-goto=".pricing-container" class="beta__link invite-link invite-btn uppercase color-white flex-ai-center" href=".pricing-container">
+        Get an invite
+        <img class="arrow" src="assets/shared/desktop/arrow.svg" alt="arrow">
+      </a>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container container">
+      <img class="footer__logo" src="assets/shared/desktop/logo-footer.svg" alt="logo">
+      
+        <ul class="socials">
+          <li>
+            <a href="">
+              <img class="social__link--icon" src="assets/shared/desktop/facebook.svg" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="social__link--icon" src="assets/shared/desktop/youtube.svg" alt="YouTube">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="social__link--icon" src="assets/shared/desktop/twitter.svg" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a href=""><img class="social__link--icon" src="assets/shared/desktop/pinterest.svg" alt="Pinterest">
+            </a>
+          </li>
+          <li>
+            <a href=""><img class="social__link--icon" src="assets/shared/desktop/instagram.svg" alt="Instagram">
+            </a>
+          </li>
+        </ul>
+        
+        <ul class="footer-menu__nav">
+          <li><a class="footer-menu__nav--link uppercase color-white" href="index.html">Home</a></li>
+          <li><a class="footer-menu__nav--link uppercase color-white" href="stories.html">Stories</a></li>
+          <li><a class="footer-menu__nav--link uppercase color-white" href="features.html">Features</a></li>
+          <li><a class="footer-menu__nav--link uppercase color-white" href="pricing.html">Pricing</a></li>
+        </ul>
+    
+      <a data-goto=".pricing-container" class="invite-link invite-btn footer__link uppercase color-white flex-ai-center" href="pricing.html">
+        Get an invite
+        <img class="arrow" src="assets/shared/desktop/arrow.svg" alt="arrow">
+      </a>
+      <p class="copyright">Copyright 2022. All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+<script src="scripts/toggle.js"></script>
+</body>
+</html>

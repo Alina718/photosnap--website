@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts/script.js"></script>
+  <title>Frontend Mentor | Photosnap Website Challenge</title>
+</head>
+<body>
+  <header>
+    <div class="header container flex-ai-center">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/shared/desktop/logo.svg" alt="logo">
+        </a>
+      </div>
+      <nav>
+        <ul class="desktop-menu__nav flex-ai-center">
+          <li><a class="nav-link uppercase" href="stories.html">Stories</a></li>
+          <li><a class="nav-link uppercase" href="features.html">Features</a></li>
+          <li><a class="nav-link uppercase" href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+      <a href="pricing.html" class="button button__bg-black header-button invite-btn fs-link uppercase">Get an invite</a>
+      <button id="mobile-button" class="mobile-menu__button"></button>
+    </div>
+    <div class="overlay"></div>
+    <div id="mobile-menu" class="mobile-menu">
+      <nav>
+        <ul class="mobile-menu__nav">
+          <li><a class="uppercase color-black" href="stories.html">Stories</a></li>
+          <li><a class="uppercase color-black" href="features.html">Features</a></li>
+          <li><a class="uppercase color-black" href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+      <a href="pricing.html" class="button__mobile color-white uppercase">Get an invite</a>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="wrapper">
+      <div class="hero__intro">
+        <h1 class="max-title uppercase">Create and <span>share your</span> <span>photo Stories.</span></h1>
+        <p class="text-flow">Photosnap is a platform for photographers and visual storytellers. We make it 
+          easy to share photos, tell stories and connect with others.</p>
+        <a class="invite-link uppercase color-white flex-ai-center" href="pricing.html">
+          Get an invite
+          <img class="arrow" src="assets/shared/desktop/arrow.svg" alt="arrow">
+        </a>
+      </div>
+    </div>
+    <div class="hero__image hero__image--homepage bg-image-settings"></div>
+  </section>
+
+  <section class="about">
+    <div class="about__item item-stories">
+      <h2 class="max-title color-black uppercase">Beautiful <span>stories</span> <span>every time</span></h2>
+      <p class="text-flow color-white">We provide design templates to ensure your stories look terrific. Easily add 
+        photos, text, embed maps and media from other networks. Then share your story 
+        with everyone.</p>
+      <a class="about__item--link uppercase color-black flex-ai-center" href="stories.html">
+        View the stories
+        <img class="arrow--black" src="assets/shared/desktop/arrow.svg" alt="arrow">
+      </a>
+    </div>
+    <div class="about__item item-design">
+      <h2 class="max-title color-black uppercase"> Designed for <span>everyone</span></h2>
+      <p class="text-flow color-white">Photosnap can help you create stories that resonate with your audience.  Our 
+        tool is designed for photographers of all levels, brands, businesses you name it. </p>
+      <a class="about__item--link uppercase color-black flex-ai-center" href="stories.html">
+        View the stories
+        <img class="arrow--black" src="assets/shared/desktop/arrow.svg" alt="arrow">
+      </a>
+    </div>
+    <div class="about__image bg-image-settings item-stories__image"></div>
+    <div class="about__image bg-image-settings item-design__image"></div>
+  </section>
+
+  <section class="blog">
+    <div class="blog__item blog__item--1 bg-image-settings">
+      <div class="blog__item--content">
+        <h3 class="min-title color-white">The Mountains</h3>
+        <p class="subtitle color-white">by John Appleseed</p>
+        <a class="blog__item--link uppercase color-white flex-ai-center" href="stories.html">
+          Read Story
+          <img class="arrow" src="assets/shared/desktop/arrow.svg" alt="arrow">
+        </a>
+      </div>
+    </div>
+    <div class="blog__item blog__item--2 bg-image-settings">
+      <div class="blog__item--content">
+        <h3 class="min-title color-white">Sunset Cityscapes</h3>
+        <p class="subtitle color-white">by Benjamin Cruz</p>
+        <a class="blog__item--link uppercase color-white flex-ai-center" href="stories.html">
+          Read Story
+          <img class="arrow" src="assets/shared/desktop/arrow.svg" alt="arrow">
+        </a>
+      </div>
+    </div>
+    <div class="blog__item blog__item--3 bg-image-settings">
+      <div class="blog__item--content">
+        <h3 class="min-title color-white">18 Days Voyage</h3>
+        <p class="subtitle color-white">by Alexei Borodin</p>
+        <a class="blog__item--link uppercase color-white flex-ai-center" href="stories.html">
+          Read Story
+          <img class="arrow" src="assets/shared/desktop/arrow.svg" alt="arrow">
+        </a>
+      </div>
+    </div>
+    <div class="blog__item blog__item--4 bg-image-settings">
+      <div class="blog__item--content">
+        <h3 class="min-title color-white">Architecturals</h3>
+        <p class="subtitle color-white">by Samantha Brooke</p>
+        <a class="blog__item--link uppercase color-white flex-ai-center" href="stories.html">
+          Read Story
+          <img class="arrow" src="assets/shared/desktop/arrow.svg" alt="arrow">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="features-container container">
+      <div class="feature__item">
+        <img class="feature__item--img" src="/starter-code/assets/features/desktop/responsive.svg" alt="devices">
+        <div class="feature__item--body">
+          <h3 class="min-title color-black">100% Responsive</h3>
+          <p>No matter which the device you’re on, our site is fully responsive and stories 
+            look beautiful on any screen.</p>
+        </div>
+      </div>
+      <div class="feature__item">
+        <img class="feature__item--img" src="/starter-code/assets/features/desktop/no-limit.svg" alt="infinity sign">
+        <div class="feature__item--body">
+          <h3 class="min-title color-black">No Photo Upload Limit</h3>
+          <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and 
+          share all of your stories in one go.
+        </div>
+        </p>
+      </div>
+      <div class="feature__item">
+        <img class="feature__item--img" src="assets/features/desktop/embed.svg" alt="logos">
+        <div class="feature__item--body">
+          <h3 class="min-title color-black">Available to Embed</h3>
+          <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, 
+            Google Maps, and more. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container container">
+      <img class="footer__logo" src="assets/shared/desktop/logo-footer.svg" alt="logo">
+      
+        <ul class="socials">
+          <li>
+            <a href="">
+              <img class="social__link--icon" src="assets/shared/desktop/facebook.svg" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="social__link--icon" src="assets/shared/desktop/youtube.svg" alt="YouTube">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="social__link--icon" src="assets/shared/desktop/twitter.svg" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a href=""><img class="social__link--icon" src="assets/shared/desktop/pinterest.svg" alt="Pinterest">
+            </a>
+          </li>
+          <li>
+            <a href=""><img class="social__link--icon" src="assets/shared/desktop/instagram.svg" alt="Instagram">
+            </a>
+          </li>
+        </ul>
+      
+      
+        <ul class="footer-menu__nav">
+          <li><a class="footer-menu__nav--link uppercase color-white" href="index.html">Home</a></li>
+          <li><a class="footer-menu__nav--link uppercase color-white" href="stories.html">Stories</a></li>
+          <li><a class="footer-menu__nav--link uppercase color-white" href="features.html">Features</a></li>
+          <li><a class="footer-menu__nav--link uppercase color-white" href="pricing.html">Pricing</a></li>
+        </ul>
+    
+      <a class="invite-link footer__link uppercase color-white flex-ai-center" href="pricing.html">
+        Get an invite
+        <img class="arrow" src="assets/shared/desktop/arrow.svg" alt="arrow">
+      </a>
+      <p class="copyright">Copyright 2022. All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+</html>
